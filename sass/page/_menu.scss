@@ -1,0 +1,177 @@
+.menu-header {
+    
+    flex-direction: inherit;
+    .link-acceuil {
+        font-size: 1.5rem;
+        color: black;
+        padding-left: 1rem ;
+    }
+}
+
+.bloc-cover img{
+     display: block;
+     max-width: 100%;
+     position: relative;
+     /*Comment redimentionner l'image sur la page note enchantée ?*/
+     
+    }
+
+
+.bloc-title {
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-top: -2rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: $greylight;
+    
+    h2 {
+        font-family:"Shrikhand" , sans-serif ;
+        padding: 1rem;
+        width: 85%;
+    }
+    i {
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 53%;
+        transform: translateY(-50%);
+        
+    }
+    &:hover{
+        .fa-solid{ 
+            opacity: 1;
+            transform: scale(1,1);
+            top: 30%;
+        }
+    }
+    
+    @include heart
+
+    
+
+}
+
+.bloc-menu {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    background-color: $greylight;
+    justify-content: center;
+
+    @media (max-width: 600px) { 
+        flex-direction: column;
+    }
+    
+    .menu {
+        flex-direction: column;
+        display: flex;
+        
+        
+
+        @media (min-width: 600px) { 
+            width: 31%; /* CA PASSE PLUS*/
+            
+        }
+        
+    }
+        
+
+        h3 {
+        font-family: "Roboto" , sans-serif;
+        font-weight: 100;
+        padding: 1rem;
+        text-transform: uppercase;
+        position: relative;
+        &::after {
+            content: "";
+            height: 0.25rem;
+            width: 3.25rem;
+            top: 2.5rem;
+            left: 1rem;
+            background-color: $tertiaire;
+            position: absolute;
+            
+           
+        }
+
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            background-color: #FFF;
+            overflow: hidden;
+            padding: 1rem;
+            margin: 0.5rem;
+            max-height: 2rem;
+            border-radius: 1rem;
+            box-shadow: 1px 6px 9px 1px rgba(0, 0, 0, 0.12);
+            @for $i from 2 through 4 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 100ms * $i;
+                }
+            }
+            animation: appear 1s;
+            animation-fill-mode: both;
+
+            
+            .menu-text {
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;/*Pourquoi les ... apparaissent pas ?*/
+
+                p {
+                    font-weight: 100;
+                    
+                    
+                }
+            }
+            .menu-price {
+                margin-left: auto; ;
+                font-weight: 900; 
+                padding-top: 1rem;
+                display: flex;
+                align-items: flex-end;
+                           
+            }
+            .menu-check {
+                background-color:$tertiaire;
+                color: #FFF;
+                font-size: 1.5rem;
+                padding: 1.5rem;
+                margin-right: -5.7rem;
+                margin-left: 1rem;
+                display: grid;
+                justify-content: center;
+                transition: all 0.5s;
+                
+                
+            }
+            &:hover 
+                .menu-check{
+                margin-right: -16px;
+                width: 0.5rem;
+                i {
+                    animation: quarterspin 1s ease-in-out;
+                }
+                    
+
+            }
+                
+            
+        }
+    }
+
+
+
+.button {
+    padding: 2rem;
+    display: grid;
+    place-items: center;
+    background-color: $greylight;
+    
+   
+    .btn {
+        @include btn_mix();
+    }
+}
