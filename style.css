@@ -338,10 +338,10 @@ header .subheader .button .btn:hover {
 }
 
 .bloc-cover img {
-  display: block;
   max-width: 100%;
-  position: relative;
-  /*Comment redimentionner l'image sur la page note enchantée ?*/
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .bloc-title {
