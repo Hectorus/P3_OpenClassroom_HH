@@ -14,7 +14,7 @@
      position: relative;
      /*Comment redimentionner l'image sur la page note enchantée ?*/
      
-    }
+}
 
 
 .bloc-title {
@@ -24,7 +24,6 @@
     margin-top: -2rem;
     border-radius: 2rem 2rem 0 0;
     background-color: $greylight;
-    
     h2 {
         font-family:"Shrikhand" , sans-serif ;
         padding: 1rem;
@@ -35,8 +34,7 @@
         position: absolute;
         right: 1rem;
         top: 53%;
-        transform: translateY(-50%);
-        
+        transform: translateY(-50%);   
     }
     &:hover{
         .fa-solid{ 
@@ -47,10 +45,8 @@
     }
     
     @include heart
-
-    
-
 }
+
 
 .bloc-menu {
     display: flex;
@@ -66,11 +62,18 @@
     .menu {
         flex-direction: column;
         display: flex;
+        @for $i from 2 through 4 {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+            }
+        }
+        animation: appear 1s;
+        animation-fill-mode: both;
         
         
 
         @media (min-width: 600px) { 
-            width: 31%; /* CA PASSE PLUS*/
+            width: 31%;
             
         }
         
@@ -106,13 +109,7 @@
             max-height: 2rem;
             border-radius: 1rem;
             box-shadow: 1px 6px 9px 1px rgba(0, 0, 0, 0.12);
-            @for $i from 2 through 4 {
-                &:nth-child(#{$i}) {
-                    animation-delay: 100ms * $i;
-                }
-            }
-            animation: appear 1s;
-            animation-fill-mode: both;
+            
 
             
             .menu-text {

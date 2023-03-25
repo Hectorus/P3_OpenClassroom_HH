@@ -397,10 +397,21 @@ header .subheader .button .btn:hover {
 .bloc-menu .menu {
   flex-direction: column;
   display: flex;
+  animation: appear 1s;
+  animation-fill-mode: both;
+}
+.bloc-menu .menu:nth-child(2) {
+  animation-delay: 200ms;
+}
+.bloc-menu .menu:nth-child(3) {
+  animation-delay: 300ms;
+}
+.bloc-menu .menu:nth-child(4) {
+  animation-delay: 400ms;
 }
 @media (min-width: 600px) {
   .bloc-menu .menu {
-    width: 31%; /* CA PASSE PLUS*/
+    width: 31%;
   }
 }
 .bloc-menu h3 {
@@ -429,17 +440,6 @@ header .subheader .button .btn:hover {
   max-height: 2rem;
   border-radius: 1rem;
   box-shadow: 1px 6px 9px 1px rgba(0, 0, 0, 0.12);
-  animation: appear 1s;
-  animation-fill-mode: both;
-}
-.bloc-menu .menu-item:nth-child(2) {
-  animation-delay: 200ms;
-}
-.bloc-menu .menu-item:nth-child(3) {
-  animation-delay: 300ms;
-}
-.bloc-menu .menu-item:nth-child(4) {
-  animation-delay: 400ms;
 }
 .bloc-menu .menu-item .menu-text {
   overflow: hidden;
