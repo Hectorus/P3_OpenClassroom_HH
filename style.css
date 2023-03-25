@@ -154,7 +154,9 @@ header .subheader .button .btn:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.12);
-  /*Comment faire une mixin des box shadow et de la transition scale */
+}
+.fonctionnement-section .fonctionnement-bloc .fonctionnement-step:hover {
+  background-color: rgba(147, 86, 220, 0.2);
 }
 .fonctionnement-section .fonctionnement-bloc .fonctionnement-step .fonctionnement-number {
   position: absolute;
@@ -171,6 +173,9 @@ header .subheader .button .btn:hover {
 .fonctionnement-section .fonctionnement-bloc .fonctionnement-step i {
   color: #7e7e7e;
   margin: 1rem;
+}
+.fonctionnement-section .fonctionnement-bloc .fonctionnement-step i :hover {
+  color: #9356DC; /* comment faire paser le violet sur i */
 }
 
 .restaurants-section {

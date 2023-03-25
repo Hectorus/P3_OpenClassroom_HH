@@ -90,7 +90,12 @@ header {
         justify-content: center;
         align-items: center;
         box-shadow: 1px 5px 8px 2px rgb(0 0 0 / 12%);
-        /*Comment faire une mixin des box shadow et de la transition scale */
+        &:hover{ 
+            background-color: rgba(147,86,220,0.2); 
+            
+        }
+
+
         .fonctionnement-number {
             position: absolute;
             left: -15px;
@@ -105,10 +110,16 @@ header {
 
             
         }
-        & i{
+        i{
             color: #7e7e7e;
             margin: 1rem;
+            & :hover{
+                color: $primaire; /* comment faire paser le violet sur i */
+            }
+            
         }
+        
+        
     }
   }
 }
