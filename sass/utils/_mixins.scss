@@ -23,7 +23,6 @@
 
 @mixin heart() {
     .fa-solid{
-        color: $primaire;
         background:linear-gradient(#e586df, #9D59DC);
         -webkit-background-clip:text;
         -webkit-text-fill-color:rgba(0,0,0,0);

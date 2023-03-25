@@ -246,7 +246,6 @@ header .subheader .button .btn:hover {
   transform: translateY(-50%);
 }
 .restaurants-bloc .restaurants-prev .restaurants-content .fa-solid {
-  color: #9356DC;
   background: linear-gradient(#e586df, #9D59DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -371,7 +370,6 @@ header .subheader .button .btn:hover {
   top: 30%;
 }
 .bloc-title .fa-solid {
-  color: #9356DC;
   background: linear-gradient(#e586df, #9D59DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
@@ -444,12 +442,16 @@ header .subheader .button .btn:hover {
   animation-delay: 400ms;
 }
 .bloc-menu .menu-item .menu-text {
-  /*Pourquoi les ... apparaissent pas ?*/
+  overflow: hidden;
+  white-space: nowrap;
 }
 .bloc-menu .menu-item .menu-text p {
   font-weight: 100;
   overflow: hidden;
-  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.bloc-menu .menu-item .menu-text h4 {
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 .bloc-menu .menu-item .menu-price {
@@ -464,21 +466,19 @@ header .subheader .button .btn:hover {
   color: #FFF;
   font-size: 1.5rem;
   padding: 1.5rem;
-  margin-right: -56px;
+  margin-right: -90px;
   margin-left: 1rem;
   display: grid;
   justify-content: center;
+  position: inherit;
   transition: all 0.5s;
 }
 .bloc-menu .menu-item:hover .menu-check {
-  margin-right: 0px;
-  width: 56px;
+  margin-right: -20px;
+  width: 10px;
 }
 .bloc-menu .menu-item:hover .menu-check i {
   animation: quarterspin 1s ease-in-out;
-}
-.bloc-menu .menu-item:hover .menu-check .menu-text {
-  width: calc(100% - 27.55px - 16px - 56px);
 }
 
 .button {
