@@ -99,7 +99,8 @@ header .subheader {
   background-color: #f7f7f7;
   width: 100%;
   font-size: 1rem;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 header .subheader .subtitle {
   color: rgba(53, 53, 53, 0.6196078431); /*couleur estompée base de #353535 C'est ok? */
@@ -438,12 +439,13 @@ header .subheader .button .btn:hover {
   animation-delay: 400ms;
 }
 .bloc-menu .menu-item .menu-text {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; /*Pourquoi les ... apparaissent pas ?*/
+  /*Pourquoi les ... apparaissent pas ?*/
 }
 .bloc-menu .menu-item .menu-text p {
   font-weight: 100;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .bloc-menu .menu-item .menu-price {
   margin-left: auto;
@@ -457,18 +459,21 @@ header .subheader .button .btn:hover {
   color: #FFF;
   font-size: 1.5rem;
   padding: 1.5rem;
-  margin-right: -5.7rem;
+  margin-right: -56px;
   margin-left: 1rem;
   display: grid;
   justify-content: center;
   transition: all 0.5s;
 }
 .bloc-menu .menu-item:hover .menu-check {
-  margin-right: -16px;
-  width: 0.5rem;
+  margin-right: 0px;
+  width: 56px;
 }
 .bloc-menu .menu-item:hover .menu-check i {
   animation: quarterspin 1s ease-in-out;
+}
+.bloc-menu .menu-item:hover .menu-check .menu-text {
+  width: calc(100% - 27.55px - 16px - 56px);
 }
 
 .button {

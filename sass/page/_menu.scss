@@ -116,13 +116,13 @@
 
             
             .menu-text {
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;/*Pourquoi les ... apparaissent pas ?*/
+                /*Pourquoi les ... apparaissent pas ?*/
 
                 p {
                     font-weight: 100;
-                    
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
                     
                 }
             }
@@ -139,7 +139,7 @@
                 color: #FFF;
                 font-size: 1.5rem;
                 padding: 1.5rem;
-                margin-right: -5.7rem;
+                margin-right: -56px;
                 margin-left: 1rem;
                 display: grid;
                 justify-content: center;
@@ -149,12 +149,15 @@
             }
             &:hover 
                 .menu-check{
-                margin-right: -16px;
-                width: 0.5rem;
+                margin-right: 0px;
+                width: 56px;
+                
                 i {
                     animation: quarterspin 1s ease-in-out;
                 }
-                    
+                .menu-text {
+                    width: calc(100% - 27.55px - 16px - 56px );
+                }    
 
             }
                 
