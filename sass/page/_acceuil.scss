@@ -50,7 +50,7 @@ header {
             
 
         .subtitle {
-            color: #3535359e ; /*couleur estompée base de #353535 C'est ok? */
+            color: #3535359e ; 
             padding: 15px;
             font-size: 1rem;
             
@@ -76,7 +76,7 @@ header {
     justify-content: space-around;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    @media (max-width: 800px) { /*Comment je fais pour que ca passe de 3 a 1 par ligne directement ?*/
+    @media (max-width: 800px) { 
         flex-direction: column;
     }
     .fonctionnement-step {
@@ -114,7 +114,7 @@ header {
             color: #7e7e7e;
             margin: 1rem;
             & :hover{
-                color: $primaire; /* comment faire paser le violet sur i */
+                color: $primaire;
             }
             
         }
@@ -171,7 +171,6 @@ header {
                 border-radius: 3px;
                 margin-top: 15px;
                 right: 30px;
-                /*ca n'apparait pas au dessus de 600px*/
             }
         
         
