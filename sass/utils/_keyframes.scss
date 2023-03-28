@@ -8,11 +8,35 @@
       opacity: 1;
     }
 }
+
+
 @keyframes quarterspin {
     0% {
       transform: rotate(-300deg);
     }
     100% {
       transform: rotate(0);
+    }
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    
+  }
+  
+}
+
+@keyframes spin_end {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
     }
 }

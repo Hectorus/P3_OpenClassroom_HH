@@ -24,7 +24,7 @@ header {
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        padding: 0,5rem;
+        padding: 0.5rem;
         height: 50px;
         box-shadow: 0px -2px 0px 0px rgb(0 0 0 / 20%);
     }
@@ -82,7 +82,7 @@ header {
     .fonctionnement-step {
         position: relative;
         display: flex;
-        height: 1,5rem;
+        height: 1.5rem;
         margin: 1rem;
         padding: 1rem;
         background-color: $greylight;
@@ -106,7 +106,7 @@ header {
             height: 2rem;
             background-color: $primaire;
             color: #ffffff;
-            padding: 0,5rem;
+            padding: 0.5rem;
 
             
         }
@@ -262,25 +262,6 @@ header {
     animation: 0.75s ease-in 0s infinite spin;
     
     
-  } 
+} 
 
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-      
-    }
-    
-}
 
-    @keyframes spin_end {
-        0% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            z-index: -1;
-        }
-    }
