@@ -42,7 +42,7 @@ header .location {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  padding: 0, 5rem;
+  padding: 0.5rem;
   height: 50px;
   box-shadow: 0px -2px 0px 0px rgba(0, 0, 0, 0.2);
 }
@@ -105,7 +105,7 @@ header .subheader .button .btn:hover {
 .fonctionnement-section .fonctionnement-bloc .fonctionnement-step {
   position: relative;
   display: flex;
-  height: 1, 5rem;
+  height: 1.5rem;
   margin: 1rem;
   padding: 1rem;
   background-color: #f7f7f7;
@@ -125,7 +125,7 @@ header .subheader .button .btn:hover {
   height: 2rem;
   background-color: #9356DC;
   color: #ffffff;
-  padding: 0, 5rem;
+  padding: 0.5rem;
 }
 .fonctionnement-section .fonctionnement-bloc .fonctionnement-step i {
   color: #7e7e7e;

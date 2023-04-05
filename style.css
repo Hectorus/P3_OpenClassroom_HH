@@ -71,6 +71,7 @@ body {
 .footer-bloc .footer-content-bloc i {
   color: #ffffff;
   margin-right: 1rem;
+  font-size: 1rem;
 }
 
 header {
@@ -285,31 +286,6 @@ header .subheader .button .btn:hover {
 .restaurants-bloc .restaurants-prev .restaurants-content .like:hover .fa-solid {
   opacity: 1;
   transform: scale(1, 1);
-}
-
-.footer-bloc {
-  background-color: #353535;
-  padding: 1rem;
-}
-.footer-bloc .footer-title-bloc {
-  margin-bottom: 0.5rem;
-}
-.footer-bloc .footer-title {
-  color: #fff;
-  font-family: Shrikhand, "cursive";
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.footer-bloc .footer-content-subtitle {
-  margin-bottom: 0.2rem;
-}
-.footer-bloc .footer-content-bloc a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.footer-bloc .footer-content-bloc i {
-  color: #ffffff;
-  margin-right: 1rem;
 }
 
 .loader {
