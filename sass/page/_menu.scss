@@ -1,6 +1,4 @@
-* {
-    max-width: 1440px;
-}
+
 .menu-header {
     
     flex-direction: inherit;
@@ -39,12 +37,16 @@
         top: 53%;
         transform: translateY(-50%);   
     }
-    &:hover{
-        .fa-solid{ 
-            opacity: 1;
-            transform: scale(1,1);
-            top: 30%;
+    
+    .like {
+        &:hover{
+            .fa-solid{ 
+                opacity: 1;
+                transform: scale(1,1);
+                top: 30%;
+            }
         }
+
     }
     
     @include heart
@@ -58,7 +60,7 @@
     background-color: $greylight;
     justify-content: center;
 
-    @media (max-width: 600px) { 
+    @media (max-width: 767.98px) { 
         flex-direction: column;
     }
     
@@ -75,7 +77,7 @@
         
         
 
-        @media (min-width: 600px) { 
+        @media (min-width: 768px) { 
             width: 31%;
             
         }
@@ -169,10 +171,9 @@
 
 
 .button {
-    padding: 2rem;
-    display: grid;
-    place-items: center;
     background-color: $greylight;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     
    
     .btn {

@@ -4,6 +4,9 @@
 }
 
 @mixin btn_mix() {
+    display: block;
+    max-width: 230px;
+    margin: auto;
     height: 50px;
     border-radius: 45px;
     border: none;

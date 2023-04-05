@@ -1,7 +1,5 @@
 
-* {
-    max-width: 1440px;
-}
+
 header {
     display: flex;
     flex-direction: column;
@@ -26,7 +24,8 @@ header {
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        padding: 0.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         height: 50px;
         box-shadow: 0px -2px 0px 0px rgb(0 0 0 / 20%);
     }
@@ -58,7 +57,8 @@ header {
             
         }
         .button {
-            padding: 2rem;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
             
            
             .btn {
@@ -85,8 +85,8 @@ header {
         position: relative;
         display: flex;
         height: 1.5rem;
-        margin: 1rem;
-        padding: 1rem;
+        margin: 2rem;
+        padding: 2rem;
         background-color: $greylight;
         border-radius: 25px;
         justify-content: center;
@@ -94,18 +94,20 @@ header {
         box-shadow: 1px 5px 8px 2px rgb(0 0 0 / 12%);
         &:hover{ 
             background-color: rgba(147,86,220,0.2); 
-            
+            i{
+                color: $primaire;
+            }
         }
 
 
         .fonctionnement-number {
             position: absolute;
-            left: -15px;
+            left: -20px;
             display: grid;
             place-items: center;
             border-radius: 50%;
-            width: 2rem;
-            height: 2rem;
+            width: 1rem;
+            height: 1rem;
             background-color: $primaire;
             color: #ffffff;
             padding: 0.5rem;
@@ -197,12 +199,16 @@ header {
             }
             @include heart();
             
-            &:hover{
-                .fa-solid{ 
-                    opacity: 1;
-                    transform: scale(1,1);
-                    
+            
+            .like {
+                &:hover{
+                    .fa-solid{ 
+                        opacity: 1;
+                        transform: scale(1,1);
+                        
+                    }
                 }
+
             }
             
             
